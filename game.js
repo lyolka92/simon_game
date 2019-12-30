@@ -11,7 +11,7 @@ var gameIsStarted = false;
 var level = 0;
 
 $(document).keydown(function() {
-    if (gameIsStarted = false) {
+    if (!gameIsStarted) {
         gameIsStarted = true;
         nextSequence();
     }
